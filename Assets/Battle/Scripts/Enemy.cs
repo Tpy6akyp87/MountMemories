@@ -1,12 +1,11 @@
 using UnityEngine;
 
-public class Fighter : Unit
+public class Enemy : Unit
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-   
     void Start()
     {
-        GetStats("Boring",22,12);
+        GetStats("VRAG", 22, 12);
         hpBar.SetHP(hp, maxhp);
     }
 

@@ -6,11 +6,12 @@ public class Rogue : Unit
     void Start()
     {
         GetStats("Ignat", 22, 12);
+        hpBar.SetHP(hp, maxhp);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        hpBar.SetHP(hp, maxhp);
     }
 }

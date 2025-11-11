@@ -9,6 +9,8 @@ public class Unit : MonoBehaviour
     public float Xpos;
     public float Ypos;
     public bool active;
+
+    public HPbar hpBar;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     public void GetStats(string setname, int setmaxhp, int sethp)
@@ -21,10 +23,10 @@ public class Unit : MonoBehaviour
     {
         
     }
-
+    
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 }

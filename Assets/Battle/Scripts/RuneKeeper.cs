@@ -6,11 +6,12 @@ public class RuneKeeper : Unit
     void Start()
     {
         GetStats("Glasha", 22, 12);
+        hpBar.SetHP(hp, maxhp);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        hpBar.SetHP(hp, maxhp);
     }
 }
