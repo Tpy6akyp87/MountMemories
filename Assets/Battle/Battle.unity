@@ -732,6 +732,7 @@ GameObject:
   - component: {fileID: 417617119}
   - component: {fileID: 417617118}
   - component: {fileID: 417617120}
+  - component: {fileID: 417617121}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Untagged
@@ -756,8 +757,10 @@ MonoBehaviour:
   hp: 0
   initiative: 0
   Xpos: 0
-  Ypos: 0
   active: 0
+  endTurn: 0
+  damage: 0
+  magic: 0
   hpBar: {fileID: 417617120}
 --- !u!4 &417617119
 Transform:
@@ -790,6 +793,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HPbar
   fillImage: {fileID: 1139430280}
   smoothSpeed: 5
+--- !u!136 &417617121
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417617117}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &435164233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,6 +1145,7 @@ GameObject:
   - component: {fileID: 723228723}
   - component: {fileID: 723228722}
   - component: {fileID: 723228724}
+  - component: {fileID: 723228725}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Untagged
@@ -1143,8 +1170,10 @@ MonoBehaviour:
   hp: 0
   initiative: 0
   Xpos: 0
-  Ypos: 0
   active: 0
+  endTurn: 0
+  damage: 0
+  magic: 0
   hpBar: {fileID: 723228724}
 --- !u!4 &723228723
 Transform:
@@ -1177,6 +1206,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HPbar
   fillImage: {fileID: 1577531398}
   smoothSpeed: 5
+--- !u!136 &723228725
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723228721}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &725031590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,6 +1670,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &849452580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 849452581}
+  - component: {fileID: 849452582}
+  m_Layer: 0
+  m_Name: TurnController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &849452581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849452580}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.46428, y: -0.91101, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &849452582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849452580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5de1fe160dbffef40813529eac631e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnController
+  units: []
+  querySet: 0
 --- !u!1 &869168163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1792,8 +1890,10 @@ MonoBehaviour:
   hp: 0
   initiative: 0
   Xpos: 0
-  Ypos: 0
   active: 0
+  endTurn: 0
+  damage: 0
+  magic: 0
   hpBar: {fileID: 876210767}
 --- !u!114 &876210767
 MonoBehaviour:
@@ -1820,6 +1920,7 @@ GameObject:
   - component: {fileID: 897491818}
   - component: {fileID: 897491817}
   - component: {fileID: 897491819}
+  - component: {fileID: 897491820}
   m_Layer: 0
   m_Name: Enemy3
   m_TagString: Untagged
@@ -1844,8 +1945,10 @@ MonoBehaviour:
   hp: 0
   initiative: 0
   Xpos: 0
-  Ypos: 0
   active: 0
+  endTurn: 0
+  damage: 0
+  magic: 0
   hpBar: {fileID: 897491819}
 --- !u!4 &897491818
 Transform:
@@ -1878,6 +1981,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HPbar
   fillImage: {fileID: 1496148307}
   smoothSpeed: 5
+--- !u!136 &897491820
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897491816}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &902632259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 486264520201511366, guid: 82f2ab968eb1d394a85c7d712cd10dfb, type: 3}
@@ -2177,8 +2303,10 @@ MonoBehaviour:
   hp: 0
   initiative: 0
   Xpos: 0
-  Ypos: 0
   active: 0
+  endTurn: 0
+  damage: 0
+  magic: 0
   hpBar: {fileID: 1481269202}
 --- !u!114 &1481269202
 MonoBehaviour:
@@ -2249,10 +2377,12 @@ MonoBehaviour:
   Name: 
   maxhp: 0
   hp: 0
-  initiative: 5
+  initiative: 0
   Xpos: 0
-  Ypos: 0
   active: 0
+  endTurn: 0
+  damage: 0
+  magic: 0
   hpBar: {fileID: 1788142252}
 --- !u!4 &1788142251
 Transform:
@@ -2733,3 +2863,4 @@ SceneRoots:
   - {fileID: 723228723}
   - {fileID: 417617119}
   - {fileID: 897491818}
+  - {fileID: 849452581}
