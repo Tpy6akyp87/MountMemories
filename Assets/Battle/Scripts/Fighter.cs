@@ -1,24 +1,40 @@
+using NUnit.Framework.Internal.Builders;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using static UnityEngine.GraphicsBuffer;
+using TMPro;
 
 public class Fighter : Unit
 {
+    public string stAbilName;
+    public string ndAbilName;
+    public Button stAbil;
+    public Button ndAbil;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-   
+
     void Start()
     {
+        stAbilName = "Swing";
+        ndAbilName = "Throw";
         GetStats("Boring",22,12, 6);
         hpBar.SetHP(hp, maxhp);
         active = false;
+        placeSprite.SetActive(false);
         endTurn = false;
+        abilityNum = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         hpBar.SetHP(hp, maxhp);
+
         if (active)
         {
+            SetAbiliesOnButton();
+            placeSprite.SetActive(true);
             if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
             {
                 Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
@@ -28,23 +44,41 @@ public class Fighter : Unit
                 {
                     Unit target = hit.collider.GetComponent<Unit>();
                     Debug.Log("Кликнули по: " + target.name);
-                    MeeleeAttack(target);
-                    // Здесь у тебя ссылка: clickedObject
+                    if (abilityNum == 1)
+                    {
+                        StSkill(target);
+                    }
+                    if (abilityNum == 2)
+                    {
+                        NdSkill(target);
+                    }
                 }
             }
             
             //Action();
         }
     }
-    public void MeeleeAttack(Unit target)
+    public void SetAbiliesOnButton()
+    {
+        TMP_Text button1Text = stAbil.GetComponentInChildren<TMP_Text>();
+        button1Text.text = stAbilName;
+        TMP_Text button2Text = ndAbil.GetComponentInChildren<TMP_Text>();
+        button2Text.text = ndAbilName;
+    }
+
+    public void StSkill (Unit target)
     {
         target.TakeDamage(damage);
         endTurn = true;
         active = false;
+        placeSprite.SetActive(false);
     }
-    public void ThrowAxe()
+    public void NdSkill(Unit target)
     {
-        
+        target.TakeDamage(damage);
+        endTurn = true;
+        active = false;
+        placeSprite.SetActive(false);
     }
 
 }

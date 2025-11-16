@@ -8,6 +8,7 @@ public class Enemy : Unit
         GetStats("VRAG", 22, 12, 4);
         hpBar.SetHP(hp, maxhp);
         active = false;
+        placeSprite.SetActive(false);
         endTurn = false;
     }
 
@@ -18,6 +19,7 @@ public class Enemy : Unit
         hpBar.SetHP(hp, maxhp);
         if (active)
         {
+            placeSprite.SetActive(true);
             Action();
         }
     }

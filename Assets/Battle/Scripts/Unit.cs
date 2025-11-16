@@ -12,6 +12,9 @@ public class Unit : MonoBehaviour
     public bool endTurn;
     public int damage;
     public int magic;
+    public int abilityNum;
+
+    public GameObject placeSprite;
 
     public HPbar hpBar;
     
@@ -49,8 +52,9 @@ public class Unit : MonoBehaviour
     public void Action()
     {
         Debug.Log(Name + "    походил");
-        //endTurn = true;
-        //active = false;
+        endTurn = true;
+        active = false;
+        placeSprite.SetActive(false);
     }
     public void TakeDamage(int damage)
     {
@@ -64,5 +68,9 @@ public class Unit : MonoBehaviour
     public void Die()
     {
         Debug.Log(Name + " died");
+    }
+    public void SetAbility(int number)
+    {
+        abilityNum = number;
     }
 }
