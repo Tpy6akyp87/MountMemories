@@ -17,6 +17,7 @@ public class Unit : MonoBehaviour
     public GameObject placeSprite;
 
     public HPbar hpBar;
+    public Camera cam;
     
     void Start()// НЕ ЮЗАТЬ
     {
@@ -49,6 +50,16 @@ public class Unit : MonoBehaviour
     //        }
     //    }
     //}
+    public void CursorOnMe()
+    {
+        Vector2 mouseScreenPos = Mouse.current.position.ReadValue();
+        Ray ray = cam.ScreenPointToRay(mouseScreenPos);
+        if (Physics.Raycast(ray, out RaycastHit hit))
+        {
+            Vector3 worldPos = hit.point; 
+            Debug.Log("Курсор наведён на: " + worldPos);
+        }
+    }
     public void Action()
     {
         Debug.Log(Name + "    походил");
