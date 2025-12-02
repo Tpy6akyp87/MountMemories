@@ -1,17 +1,18 @@
+п»їusing Newtonsoft.Json;  // в†ђ РќРћР’РћР•: РґР»СЏ Json.NET
 using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-// ======================= ДАННЫЕ =======================
-[Serializable]
+// ======================= Р”РђРќРќР«Р• =======================
+[System.Serializable]  // РћСЃС‚Р°РІР»СЏРµРј РґР»СЏ Unity Inspector, РЅРѕ РЅРµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ
 public class GameData
 {
     public PlayerData[] playerDatas = new PlayerData[0];
-    // Здесь можешь добавить любые другие поля: уровень, золото, настройки и т.д.
+    // Р—РґРµСЃСЊ РјРѕР¶РµС€СЊ РґРѕР±Р°РІРёС‚СЊ Р»СЋР±С‹Рµ РґСЂСѓРіРёРµ РїРѕР»СЏ: СѓСЂРѕРІРµРЅСЊ, Р·РѕР»РѕС‚Рѕ, РЅР°СЃС‚СЂРѕР№РєРё Рё С‚.Рґ.
 }
 
-[Serializable]
+[System.Serializable]
 public class PlayerData
 {
     public string playername;
@@ -25,15 +26,15 @@ public class PlayerData
     public int runeDamage;
     public int rogDamage;
 
-    // Пустой конструктор (не обязателен, но на всякий случай)
+    // РџСѓСЃС‚РѕР№ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ (РЅРµ РѕР±СЏР·Р°С‚РµР»РµРЅ, РЅРѕ РЅР° РІСЃСЏРєРёР№ СЃР»СѓС‡Р°Р№)
     public PlayerData() { }
 }
 
-// ======================= СИСТЕМА СОХРАНЕНИЙ =======================
+// ======================= РЎРРЎРўР•РњРђ РЎРћРҐР РђРќР•РќРР™ =======================
 public static class SaveSystem
 {
     private static readonly string SaveFolder = Path.Combine(Application.persistentDataPath, "Saves");
-    private const string Extension = ".json"; // теперь сохраняем в читаемом JSON
+    private const string Extension = ".json"; // С‚РµРїРµСЂСЊ СЃРѕС…СЂР°РЅСЏРµРј РІ С‡РёС‚Р°РµРјРѕРј JSON
 
     private static string GetSavePath(string saveName)
     {
@@ -47,49 +48,50 @@ public static class SaveSystem
     }
 
     // ================================================
-    // 1. Создание нового профиля
+    // 1. РЎРѕР·РґР°РЅРёРµ РЅРѕРІРѕРіРѕ РїСЂРѕС„РёР»СЏ
     // ================================================
     public static void CreateNewSave(string saveName)
     {
         if (string.IsNullOrEmpty(saveName))
         {
-            Debug.LogError("Имя профиля пустое!");
+            Debug.LogError("РРјСЏ РїСЂРѕС„РёР»СЏ РїСѓСЃС‚РѕРµ!");
             return;
         }
 
         EnsureFolderExists();
 
         GameData newData = new GameData();
-        // При желании можно сразу добавить первого игрока:
-        // newData.playerDatas.Add(new PlayerData { playername = saveName });
+        // РџСЂРё Р¶РµР»Р°РЅРёРё РјРѕР¶РЅРѕ СЃСЂР°Р·Сѓ РґРѕР±Р°РІРёС‚СЊ РїРµСЂРІРѕРіРѕ РёРіСЂРѕРєР°:
+        // newData.playerDatas = new PlayerData[1] { new PlayerData { playername = saveName } };  // РСЃРїСЂР°РІРёР»: РёСЃРїРѕР»СЊР·СѓР№ РјР°СЃСЃРёРІ, Р° РЅРµ Add()
 
         Save(saveName, newData);
-        Debug.Log($"Создан новый профиль: {saveName}");
+        Debug.Log($"РЎРѕР·РґР°РЅ РЅРѕРІС‹Р№ РїСЂРѕС„РёР»СЊ: {saveName}");
     }
 
     // ================================================
-    // 2. Сохранение текущих данных
+    // 2. РЎРѕС…СЂР°РЅРµРЅРёРµ С‚РµРєСѓС‰РёС… РґР°РЅРЅС‹С…
     // ================================================
     public static void Save(string saveName, GameData data)
     {
         EnsureFolderExists();
 
-        string json = JsonUtility.ToJson(data, true); // true = красивый отступ (для отладки)
+        // в†ђ РР—РњР•РќР•РќРћ: РСЃРїРѕР»СЊР·СѓРµРј Json.NET
+        string json = JsonConvert.SerializeObject(data, Formatting.Indented);  // Indented = РєСЂР°СЃРёРІС‹Р№ РѕС‚СЃС‚СѓРї
         string path = GetSavePath(saveName);
 
         try
         {
             File.WriteAllText(path, json);
-            Debug.Log($"Сохранено в: {path}");
+            Debug.Log($"РЎРѕС…СЂР°РЅРµРЅРѕ РІ: {path}");
         }
         catch (Exception e)
         {
-            Debug.LogError($"Ошибка записи файла сохранения: {e.Message}");
+            Debug.LogError($"РћС€РёР±РєР° Р·Р°РїРёСЃРё С„Р°Р№Р»Р° СЃРѕС…СЂР°РЅРµРЅРёСЏ: {e.Message}");
         }
     }
 
     // ================================================
-    // 3. Загрузка (с кэшированием в одной сессии!)
+    // 3. Р—Р°РіСЂСѓР·РєР° (СЃ РєСЌС€РёСЂРѕРІР°РЅРёРµРј РІ РѕРґРЅРѕР№ СЃРµСЃСЃРёРё!)
     // ================================================
     private static readonly Dictionary<string, GameData> loadedSaves = new Dictionary<string, GameData>();
 
@@ -102,10 +104,11 @@ public static class SaveSystem
         if (!File.Exists(path)) return null;
 
         string json = File.ReadAllText(path);
-        GameData data = JsonUtility.FromJson<GameData>(json);
+        // в†ђ РР—РњР•РќР•РќРћ: РСЃРїРѕР»СЊР·СѓРµРј Json.NET
+        GameData data = JsonConvert.DeserializeObject<GameData>(json);
 
-        // Важно: если в файле был пустой массив — сделаем его изменяемым
-        if (data.playerDatas == null)
+        // Р’Р°Р¶РЅРѕ: РµСЃР»Рё РІ С„Р°Р№Р»Рµ Р±С‹Р» РїСѓСЃС‚РѕР№ РјР°СЃСЃРёРІ вЂ” СЃРґРµР»Р°РµРј РµРіРѕ РёР·РјРµРЅСЏРµРјС‹Рј
+        if (data?.playerDatas == null)
             data.playerDatas = new PlayerData[0];
 
         loadedSaves[saveName] = data;
@@ -113,7 +116,7 @@ public static class SaveSystem
     }
 
     // ================================================
-    // 4. Удаление профиля
+    // 4. РЈРґР°Р»РµРЅРёРµ РїСЂРѕС„РёР»СЏ
     // ================================================
     public static bool DeleteSave(string saveName)
     {
@@ -123,16 +126,16 @@ public static class SaveSystem
         {
             File.Delete(path);
             loadedSaves.Remove(saveName);
-            Debug.Log($"Профиль удалён: {saveName}");
+            Debug.Log($"РџСЂРѕС„РёР»СЊ СѓРґР°Р»С‘РЅ: {saveName}");
             return true;
         }
 
-        Debug.LogWarning($"Попытка удалить несуществующий профиль: {saveName}");
+        Debug.LogWarning($"РџРѕРїС‹С‚РєР° СѓРґР°Р»РёС‚СЊ РЅРµСЃСѓС‰РµСЃС‚РІСѓСЋС‰РёР№ РїСЂРѕС„РёР»СЊ: {saveName}");
         return false;
     }
 
     // ================================================
-    // 5. Получить список всех профилей
+    // 5. РџРѕР»СѓС‡РёС‚СЊ СЃРїРёСЃРѕРє РІСЃРµС… РїСЂРѕС„РёР»РµР№
     // ================================================
     public static List<string> GetAllSaveNames()
     {
@@ -150,11 +153,11 @@ public static class SaveSystem
     }
 
     // ================================================
-    // 6. Очистка кэша (вызывай при выходе из игры или смене аккаунта)
+    // 6. РћС‡РёСЃС‚РєР° РєСЌС€Р° (РІС‹Р·С‹РІР°Р№ РїСЂРё РІС‹С…РѕРґРµ РёР· РёРіСЂС‹ РёР»Рё СЃРјРµРЅРµ Р°РєРєР°СѓРЅС‚Р°)
     // ================================================
     public static void ClearCache()
     {
         loadedSaves.Clear();
-        Debug.Log("Кэш сохранений очищен");
+        Debug.Log("РљСЌС€ СЃРѕС…СЂР°РЅРµРЅРёР№ РѕС‡РёС‰РµРЅ");
     }
 }
