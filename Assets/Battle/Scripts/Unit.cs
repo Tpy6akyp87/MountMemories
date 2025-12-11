@@ -18,7 +18,9 @@ public class Unit : MonoBehaviour
 
     public HPbar hpBar;
     public Camera cam;
-    
+    public static GameData CurrentGameData { get; private set; }
+    public GDataMb gDataMb;
+
     void Start()// Õ≈ ﬁ«¿“‹
     {
         // Õ≈ ﬁ«¿“‹
@@ -28,8 +30,13 @@ public class Unit : MonoBehaviour
     {
         // Õ≈ ﬁ«¿“‹
     }
-    public void GetStats(string setname, int setmaxhp, int sethp, int setInitiative)
+    public void LoadStats()
     {
+        gDataMb = FindAnyObjectByType<GDataMb>();
+        CurrentGameData = SaveSystem.Load(gDataMb.loadingGame);
+    }
+    public void GetStats(string setname, int setmaxhp, int sethp, int setInitiative)
+    {        
         Name = setname;
         maxhp = setmaxhp;
         hp = sethp;

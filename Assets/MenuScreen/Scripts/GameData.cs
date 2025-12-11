@@ -3,12 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using Random = System.Random;
 
 // ======================= ДАННЫЕ =======================
 [System.Serializable]  // Оставляем для Unity Inspector, но не обязательно
 public class GameData
 {
-    public PlayerData[] playerDatas = new PlayerData[0];
+    //public PlayerData[] playerDatas = new PlayerData[0];
+    public PlayerData playerDatas;
     // Здесь можешь добавить любые другие поля: уровень, золото, настройки и т.д.
 }
 
@@ -59,8 +61,17 @@ public static class SaveSystem
         }
 
         EnsureFolderExists();
-
+        List<string> warNames = new List<string> { "war1", "war2", "war33", "war4" };
+        List<string> runeNames = new List<string> { "rune1", "rune2", "rune3", "rune4" };
+        List<string> rogNames = new List<string> { "rog1", "rog2", "rog3", "rog4" };
+        Random rnd = new Random();
+        int randomIndex = rnd.Next(warNames.Count);
         GameData newData = new GameData();
+        newData.playerDatas = new PlayerData();
+        newData.playerDatas.playername = saveName;
+        newData.playerDatas.warName = warNames[randomIndex];
+        newData.playerDatas.runeName = runeNames[randomIndex];
+        newData.playerDatas.rogName = rogNames[randomIndex];
         // При желании можно сразу добавить первого игрока:
         // newData.playerDatas = new PlayerData[1] { new PlayerData { playername = saveName } };  // Исправил: используй массив, а не Add()
 
@@ -109,7 +120,7 @@ public static class SaveSystem
 
         // Важно: если в файле был пустой массив — сделаем его изменяемым
         if (data?.playerDatas == null)
-            data.playerDatas = new PlayerData[0];
+            data.playerDatas = new PlayerData();
 
         loadedSaves[saveName] = data;
         return data;

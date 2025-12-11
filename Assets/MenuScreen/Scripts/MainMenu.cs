@@ -18,6 +18,7 @@ public class MainMenu : MonoBehaviour
     // Внутренние данные
     private string selectedProfileName = null;      // Какой профиль сейчас выбран
     public static GameData CurrentGameData { get; private set; } // Текущие загруженные данные
+    public GDataMb gDataMb;
 
     private void Start()
     {
@@ -107,9 +108,10 @@ public class MainMenu : MonoBehaviour
 
         if (CurrentGameData != null)
         {
-            Debug.Log($"Выбран профиль: {profileName} (игроков: {CurrentGameData.playerDatas.Length})");
+            Debug.Log($"Выбран профиль: {profileName}");
             if (currentProfileText) currentProfileText.text = $"Текущий: {profileName}";
             buttonPlay.interactable = true;
+            gDataMb.loadingGame = profileName;
         }
         else
         {
@@ -152,6 +154,7 @@ public class MainMenu : MonoBehaviour
         // Здесь сохраняем имя текущего профиля, чтобы в игре знать, куда сохранять
         PlayerPrefs.SetString("LastProfile", selectedProfileName);
         PlayerPrefs.Save();
+        gDataMb.loadingGame = selectedProfileName;
 
         // Переходим на игровую сцену
         UnityEngine.SceneManagement.SceneManager.LoadScene("Battle"); // ← замени на свою

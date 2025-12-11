@@ -16,9 +16,10 @@ public class Fighter : Unit
 
     void Start()
     {
+        LoadStats();
         stAbilName = "Swing";
         ndAbilName = "Throw";
-        GetStats("Boring",22,12, 6);
+        GetStats(CurrentGameData.playerDatas.warName,22,12, 6);
         hpBar.SetHP(hp, maxhp);
         active = false;
         placeSprite.SetActive(false);
