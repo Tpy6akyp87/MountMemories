@@ -18,6 +18,7 @@ public class GameData
 public class PlayerData
 {
     public string playername;
+
     public string warName;
     public string runeName;
     public string rogName;
@@ -27,6 +28,11 @@ public class PlayerData
     public int warDamage;
     public int runeDamage;
     public int rogDamage;
+
+    public int lvlBlaSm;
+    public int lvlKitchen;
+    public int lvlWeapMaster;
+    public int lvlRuneMaster;
 
     // Пустой конструктор (не обязателен, но на всякий случай)
     public PlayerData() { }
@@ -61,17 +67,31 @@ public static class SaveSystem
         }
 
         EnsureFolderExists();
-        List<string> warNames = new List<string> { "war1", "war2", "war33", "war4" };
-        List<string> runeNames = new List<string> { "rune1", "rune2", "rune3", "rune4" };
-        List<string> rogNames = new List<string> { "rog1", "rog2", "rog3", "rog4" };
+        List<string> warNames = new List<string> { "Togmar", "Ulrich", "Farhol", "Grimstol" };
+        List<string> runeNames = new List<string> { "Ksofi", "Lanari", "Ghir", "Rudra" };
+        List<string> rogNames = new List<string> { "Frityof", "Rodel", "Snory", "Farting" };
         Random rnd = new Random();
-        int randomIndex = rnd.Next(warNames.Count);
+        int randomIndex1 = rnd.Next(warNames.Count);
+        int randomIndex2 = rnd.Next(warNames.Count);
+        int randomIndex3 = rnd.Next(warNames.Count);
         GameData newData = new GameData();
         newData.playerDatas = new PlayerData();
         newData.playerDatas.playername = saveName;
-        newData.playerDatas.warName = warNames[randomIndex];
-        newData.playerDatas.runeName = runeNames[randomIndex];
-        newData.playerDatas.rogName = rogNames[randomIndex];
+        newData.playerDatas.warName = warNames[randomIndex1];
+        newData.playerDatas.runeName = runeNames[randomIndex2];
+        newData.playerDatas.rogName = rogNames[randomIndex3];
+        newData.playerDatas.warHP = 25;
+        newData.playerDatas.runeHP = 23;
+        newData.playerDatas.rogHP = 20;
+        newData.playerDatas.warDamage = 5;
+        newData.playerDatas.runeDamage = 4;
+        newData.playerDatas.rogDamage = 6;
+        newData.playerDatas.lvlBlaSm = 1;
+        newData.playerDatas.lvlKitchen = 1;
+        newData.playerDatas.lvlWeapMaster = 1;
+        newData.playerDatas.lvlRuneMaster = 1;
+
+        newData.playerDatas.lvlBlaSm = 1;
         // При желании можно сразу добавить первого игрока:
         // newData.playerDatas = new PlayerData[1] { new PlayerData { playername = saveName } };  // Исправил: используй массив, а не Add()
 

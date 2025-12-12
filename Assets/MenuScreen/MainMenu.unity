@@ -1197,7 +1197,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -250.545, y: 0.0002822876}
+  m_AnchoredPosition: {x: -250.54503, y: 0.0002822876}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &878180298
@@ -2376,7 +2376,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1748657558}
-  - component: {fileID: 1748657559}
   - component: {fileID: 1748657560}
   m_Layer: 0
   m_Name: GameData
@@ -2400,18 +2399,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1748657559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1748657557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67701bcb9f0854e43a8278d9cdae63b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameData
 --- !u!114 &1748657560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2508,7 +2495,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1986704083}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999949
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

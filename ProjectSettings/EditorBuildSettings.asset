@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Battle/Battle.unity
     guid: ff754724f54b5e949a1e6ddd93c9d9fa
+  - enabled: 1
+    path: Assets/Camp/Camp.unity
+    guid: 4044e703b94a3c04198f3ca69543d04a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
