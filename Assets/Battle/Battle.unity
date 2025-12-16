@@ -1218,7 +1218,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 660810982526095258, guid: 10e36bb3402d55d49b2f851ca7487649, type: 3}
+  m_Sprite: {fileID: 5861918153687331951, guid: 4b1ce5ce7b2132e4faef5cd263ef58ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2039,6 +2039,7 @@ GameObject:
   - component: {fileID: 876210765}
   - component: {fileID: 876210766}
   - component: {fileID: 876210767}
+  - component: {fileID: 876210768}
   m_Layer: 0
   m_Name: Rogue
   m_TagString: Untagged
@@ -2108,6 +2109,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HPbar
   fillImage: {fileID: 316870621}
   smoothSpeed: 5
+--- !u!95 &876210768
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876210764}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ff93f8e30daa584f8c105bc1a05d8b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &897491816
 GameObject:
   m_ObjectHideFlags: 0
