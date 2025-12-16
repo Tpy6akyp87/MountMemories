@@ -1,0 +1,1287 @@
+fileFormatVersion: 2
+guid: 76b1c8238680614498d84be85634448c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5308031020104939530
+    second: Bandit Necromancer Sprite Sheet_0
+  - first:
+      213: 4456820215186162945
+    second: Bandit Necromancer Sprite Sheet_1
+  - first:
+      213: 2422630474542948015
+    second: Bandit Necromancer Sprite Sheet_2
+  - first:
+      213: -8984340207126659132
+    second: Bandit Necromancer Sprite Sheet_3
+  - first:
+      213: 6991585246309423389
+    second: Bandit Necromancer Sprite Sheet_4
+  - first:
+      213: -8264659441920748497
+    second: Bandit Necromancer Sprite Sheet_5
+  - first:
+      213: -7814603372967157091
+    second: Bandit Necromancer Sprite Sheet_6
+  - first:
+      213: -2076757792495227492
+    second: Bandit Necromancer Sprite Sheet_7
+  - first:
+      213: 4316700106304933848
+    second: Bandit Necromancer Sprite Sheet_8
+  - first:
+      213: -607587819316970133
+    second: Bandit Necromancer Sprite Sheet_9
+  - first:
+      213: -4274103481905877516
+    second: Bandit Necromancer Sprite Sheet_10
+  - first:
+      213: -4532296855376148535
+    second: Bandit Necromancer Sprite Sheet_11
+  - first:
+      213: 7598358252772383676
+    second: Bandit Necromancer Sprite Sheet_12
+  - first:
+      213: 6859463819426629648
+    second: Bandit Necromancer Sprite Sheet_13
+  - first:
+      213: -4060608078570544700
+    second: Bandit Necromancer Sprite Sheet_14
+  - first:
+      213: 6428673984659933133
+    second: Bandit Necromancer Sprite Sheet_15
+  - first:
+      213: 6127765094134750914
+    second: Bandit Necromancer Sprite Sheet_16
+  - first:
+      213: 1626314755265323652
+    second: Bandit Necromancer Sprite Sheet_17
+  - first:
+      213: 1548589870103277316
+    second: Bandit Necromancer Sprite Sheet_18
+  - first:
+      213: -4382037118277157232
+    second: Bandit Necromancer Sprite Sheet_19
+  - first:
+      213: -5740492371309844664
+    second: Bandit Necromancer Sprite Sheet_20
+  - first:
+      213: -2944017893312854129
+    second: Bandit Necromancer Sprite Sheet_21
+  - first:
+      213: -4292538056529389147
+    second: Bandit Necromancer Sprite Sheet_22
+  - first:
+      213: 9053995880984743022
+    second: Bandit Necromancer Sprite Sheet_23
+  - first:
+      213: 37075204289012457
+    second: Bandit Necromancer Sprite Sheet_24
+  - first:
+      213: -753580379916799118
+    second: Bandit Necromancer Sprite Sheet_25
+  - first:
+      213: -8271933546939972058
+    second: Bandit Necromancer Sprite Sheet_26
+  - first:
+      213: 5760574427822979508
+    second: Bandit Necromancer Sprite Sheet_27
+  - first:
+      213: -4256039581574943640
+    second: Bandit Necromancer Sprite Sheet_28
+  - first:
+      213: 4605319628953852976
+    second: Bandit Necromancer Sprite Sheet_29
+  - first:
+      213: 718196314404349678
+    second: Bandit Necromancer Sprite Sheet_30
+  - first:
+      213: 1674880030312102016
+    second: Bandit Necromancer Sprite Sheet_31
+  - first:
+      213: -7387884802297624884
+    second: Bandit Necromancer Sprite Sheet_32
+  - first:
+      213: -4771906674724690661
+    second: Bandit Necromancer Sprite Sheet_33
+  - first:
+      213: 6286946885322429257
+    second: Bandit Necromancer Sprite Sheet_34
+  - first:
+      213: -8001657016247135365
+    second: Bandit Necromancer Sprite Sheet_35
+  - first:
+      213: -1359143234869229434
+    second: Bandit Necromancer Sprite Sheet_36
+  - first:
+      213: 9039758364905464957
+    second: Bandit Necromancer Sprite Sheet_37
+  - first:
+      213: -691620890959260345
+    second: Bandit Necromancer Sprite Sheet_38
+  - first:
+      213: -8626265253068495583
+    second: Bandit Necromancer Sprite Sheet_39
+  - first:
+      213: 632605240904458869
+    second: Bandit Necromancer Sprite Sheet_40
+  - first:
+      213: 8183573057286877322
+    second: Bandit Necromancer Sprite Sheet_41
+  - first:
+      213: -6241923172288654884
+    second: Bandit Necromancer Sprite Sheet_42
+  - first:
+      213: -3638131958583481653
+    second: Bandit Necromancer Sprite Sheet_43
+  - first:
+      213: 6536482899513334799
+    second: Bandit Necromancer Sprite Sheet_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 9
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 159
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08fb12f61ae9a940800000000000000
+      internalID: 5308031020104939530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 159
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10583f95f5ec9dd30800000000000000
+      internalID: 4456820215186162945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 159
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae1b29b499ee9120800000000000000
+      internalID: 2422630474542948015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 159
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cfb4f4ce26315380800000000000000
+      internalID: -8984340207126659132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 159
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19922f0db9170160800000000000000
+      internalID: 6991585246309423389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 159
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f245cbe86080e4d80800000000000000
+      internalID: -8264659441920748497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 159
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9229b5c2a3fc8390800000000000000
+      internalID: -7814603372967157091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 159
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d2cc57acfdd23e0800000000000000
+      internalID: -2076757792495227492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 127
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df423630eff7eb30800000000000000
+      internalID: 4316700106304933848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 131
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6df1c3f81a6197f0800000000000000
+      internalID: -607587819316970133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 133
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd6db347855fa4c0800000000000000
+      internalID: -4274103481905877516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 131
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c74faee50c0a11c0800000000000000
+      internalID: -4532296855376148535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 127
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbbd7a4b29ac27960800000000000000
+      internalID: 7598358252772383676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 130
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01881923006b13f50800000000000000
+      internalID: 6859463819426629648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 132
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1a8b07772d5a7c0800000000000000
+      internalID: -4060608078570544700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 130
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc74370bdec373950800000000000000
+      internalID: 6428673984659933133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 95
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ce90f603e13a0550800000000000000
+      internalID: 6127765094134750914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 95
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482e09047a4d19610800000000000000
+      internalID: 1626314755265323652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 95
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f26463842bd7510800000000000000
+      internalID: 1548589870103277316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 95
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e738c3570ef23c0800000000000000
+      internalID: -4382037118277157232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 63
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847ac3c4a9ca550b0800000000000000
+      internalID: -5740492371309844664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 95
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8781b8f25fb427d0800000000000000
+      internalID: -2944017893312854129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 63
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a958b36167dd64c0800000000000000
+      internalID: -4292538056529389147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 95
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c02fb984146ad70800000000000000
+      internalID: 9053995880984743022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 63
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e22f9da3b7b38000800000000000000
+      internalID: 37075204289012457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 95
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273fa5913aeba85f0800000000000000
+      internalID: -753580379916799118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 63
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62681010440343d80800000000000000
+      internalID: -8271933546939972058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 91
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b97698dbeba1ff40800000000000000
+      internalID: 5760574427822979508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 63
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c293ecc828fe4c0800000000000000
+      internalID: -4256039581574943640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 63
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c9de07dc169ef30800000000000000
+      internalID: 4605319628953852976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 63
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6e0172ebb87f900800000000000000
+      internalID: 718196314404349678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 63
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088f520838e5e3710800000000000000
+      internalID: 1674880030312102016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 31
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc60b8d3ae5f87990800000000000000
+      internalID: -7387884802297624884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 31
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1528b77928c6cdb0800000000000000
+      internalID: -4771906674724690661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 31
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943546de1e8bf3750800000000000000
+      internalID: 6286946885322429257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 31
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73d31c965764f090800000000000000
+      internalID: -8001657016247135365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6888ebecd6a532de0800000000000000
+      internalID: -1359143234869229434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d746e83965ca37d70800000000000000
+      internalID: 9039758364905464957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 745522bc67ed666f0800000000000000
+      internalID: -691620890959260345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125ae8cc479594880800000000000000
+      internalID: -8626265253068495583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572292b6d1777c800800000000000000
+      internalID: 632605240904458869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80ba015654e19170800000000000000
+      internalID: 8183573057286877322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 30
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1947822fb3069a0800000000000000
+      internalID: -6241923172288654884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcaa2a26242c28dc0800000000000000
+      internalID: -3638131958583481653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit Necromancer Sprite Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c58e9b09046ba50800000000000000
+      internalID: 6536482899513334799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bandit Necromancer Sprite Sheet_0: 5308031020104939530
+      Bandit Necromancer Sprite Sheet_1: 4456820215186162945
+      Bandit Necromancer Sprite Sheet_10: -4274103481905877516
+      Bandit Necromancer Sprite Sheet_11: -4532296855376148535
+      Bandit Necromancer Sprite Sheet_12: 7598358252772383676
+      Bandit Necromancer Sprite Sheet_13: 6859463819426629648
+      Bandit Necromancer Sprite Sheet_14: -4060608078570544700
+      Bandit Necromancer Sprite Sheet_15: 6428673984659933133
+      Bandit Necromancer Sprite Sheet_16: 6127765094134750914
+      Bandit Necromancer Sprite Sheet_17: 1626314755265323652
+      Bandit Necromancer Sprite Sheet_18: 1548589870103277316
+      Bandit Necromancer Sprite Sheet_19: -4382037118277157232
+      Bandit Necromancer Sprite Sheet_2: 2422630474542948015
+      Bandit Necromancer Sprite Sheet_20: -5740492371309844664
+      Bandit Necromancer Sprite Sheet_21: -2944017893312854129
+      Bandit Necromancer Sprite Sheet_22: -4292538056529389147
+      Bandit Necromancer Sprite Sheet_23: 9053995880984743022
+      Bandit Necromancer Sprite Sheet_24: 37075204289012457
+      Bandit Necromancer Sprite Sheet_25: -753580379916799118
+      Bandit Necromancer Sprite Sheet_26: -8271933546939972058
+      Bandit Necromancer Sprite Sheet_27: 5760574427822979508
+      Bandit Necromancer Sprite Sheet_28: -4256039581574943640
+      Bandit Necromancer Sprite Sheet_29: 4605319628953852976
+      Bandit Necromancer Sprite Sheet_3: -8984340207126659132
+      Bandit Necromancer Sprite Sheet_30: 718196314404349678
+      Bandit Necromancer Sprite Sheet_31: 1674880030312102016
+      Bandit Necromancer Sprite Sheet_32: -7387884802297624884
+      Bandit Necromancer Sprite Sheet_33: -4771906674724690661
+      Bandit Necromancer Sprite Sheet_34: 6286946885322429257
+      Bandit Necromancer Sprite Sheet_35: -8001657016247135365
+      Bandit Necromancer Sprite Sheet_36: -1359143234869229434
+      Bandit Necromancer Sprite Sheet_37: 9039758364905464957
+      Bandit Necromancer Sprite Sheet_38: -691620890959260345
+      Bandit Necromancer Sprite Sheet_39: -8626265253068495583
+      Bandit Necromancer Sprite Sheet_4: 6991585246309423389
+      Bandit Necromancer Sprite Sheet_40: 632605240904458869
+      Bandit Necromancer Sprite Sheet_41: 8183573057286877322
+      Bandit Necromancer Sprite Sheet_42: -6241923172288654884
+      Bandit Necromancer Sprite Sheet_43: -3638131958583481653
+      Bandit Necromancer Sprite Sheet_44: 6536482899513334799
+      Bandit Necromancer Sprite Sheet_5: -8264659441920748497
+      Bandit Necromancer Sprite Sheet_6: -7814603372967157091
+      Bandit Necromancer Sprite Sheet_7: -2076757792495227492
+      Bandit Necromancer Sprite Sheet_8: 4316700106304933848
+      Bandit Necromancer Sprite Sheet_9: -607587819316970133
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

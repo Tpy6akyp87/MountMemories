@@ -34,6 +34,7 @@ public class Fighter : Unit
 
         if (active)
         {
+            animator.SetBool("WarIdle", true);
             SetAbiliesOnButton();
             placeSprite.SetActive(true);
             if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
@@ -55,8 +56,13 @@ public class Fighter : Unit
                     }
                 }
             }
-            
+
             //Action();
+        }
+        else
+        {
+            animator.SetBool("WarIdle", true);
+            animator.SetBool("WarAttack", false);
         }
     }
     public void SetAbiliesOnButton()
@@ -69,17 +75,17 @@ public class Fighter : Unit
 
     public void StSkill (Unit target)
     {
+        animator.SetBool("WarIdle", false);
+        animator.SetBool("WarAttack", true);
         target.TakeDamage(damage);
-        endTurn = true;
-        active = false;
-        placeSprite.SetActive(false);
+        //EndTurn();
     }
     public void NdSkill(Unit target)
     {
+        animator.SetBool("WarIdle", false);
+        animator.SetBool("WarAttack", true);
         target.TakeDamage(damage);
-        endTurn = true;
-        active = false;
-        placeSprite.SetActive(false);
+        //EndTurn();
     }
 
 }

@@ -21,6 +21,8 @@ public class Unit : MonoBehaviour
     public static GameData CurrentGameData { get; private set; }
     public GDataMb gDataMb;
 
+    public Animator animator;
+
     void Start()// Õ≈ ﬁ«¿“‹
     {
         // Õ≈ ﬁ«¿“‹
@@ -90,5 +92,11 @@ public class Unit : MonoBehaviour
     public void SetAbility(int number)
     {
         abilityNum = number;
+    }
+    public void EndTurn()
+    {
+        endTurn = true;
+        active = false;
+        placeSprite.SetActive(false);
     }
 }
