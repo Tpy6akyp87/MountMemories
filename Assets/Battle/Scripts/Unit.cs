@@ -66,15 +66,13 @@ public class Unit : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
             Vector3 worldPos = hit.point; 
-            Debug.Log("Курсор наведён на: " + worldPos);
+            //Debug.Log("Курсор наведён на: " + worldPos);
         }
     }
-    public void Action()
+    public void Action()//времееная заглушка для передачи хода
     {
         Debug.Log(Name + "    походил");
-        endTurn = true;
-        active = false;
-        placeSprite.SetActive(false);
+        EndTurn();
     }
     public void TakeDamage(int damage)
     {
@@ -98,5 +96,28 @@ public class Unit : MonoBehaviour
         endTurn = true;
         active = false;
         placeSprite.SetActive(false);
+    }
+    public void FindTarget(int position)//, Unit target1, Unit target2, Unit target3) // pos = 1/2/3/23/123
+    {
+        Debug.Log("_______________________________________");
+        Unit[] units;
+        int tg1 = 0;
+        int tg2 = 0;
+        int tg3 = 0;
+        units = FindObjectsByType<Unit>(FindObjectsSortMode.None);
+        for (int i = 0; i < units.Length; i++)
+        {
+            if (units[i].transform.position.x == -1) { tg1 = i; Debug.Log(units[i].name); }
+            if (units[i].transform.position.x == -3) { tg2 = i; Debug.Log(units[i].name); }
+            if (units[i].transform.position.x == -5) { tg3 = i; Debug.Log(units[i].name); }
+            Debug.Log("Позиция " + units[i].Name + " = " + units[i].transform.position.x);
+        }
+        switch (position)
+        {
+            case 1:
+                units[tg1].TakeDamage(damage);
+                break;
+        }
+        //if (pos == 1) return;
     }
 }

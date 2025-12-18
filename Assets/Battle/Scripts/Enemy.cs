@@ -21,8 +21,21 @@ public class Enemy : Unit
         hpBar.SetHP(hp, maxhp);
         if (active)
         {
+            animator.SetBool("Idle", true);            
             placeSprite.SetActive(true);
-            Action();
+            
+            MeeleeStrike();
+            //Action();
         }
+        else
+        {
+            animator.SetBool("Idle", true);
+            animator.SetBool("Attack", false);
+        }
+    }
+    
+    public void MeeleeStrike()
+    {
+        animator.SetBool("Attack", true);
     }
 }

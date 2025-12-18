@@ -756,6 +756,7 @@ GameObject:
   - component: {fileID: 417617118}
   - component: {fileID: 417617120}
   - component: {fileID: 417617121}
+  - component: {fileID: 417617122}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Untagged
@@ -782,14 +783,14 @@ MonoBehaviour:
   Xpos: 0
   active: 0
   endTurn: 0
-  damage: 0
+  damage: 2
   magic: 0
   abilityNum: 0
   placeSprite: {fileID: 160571286}
   hpBar: {fileID: 417617120}
   cam: {fileID: 0}
   gDataMb: {fileID: 0}
-  animator: {fileID: 0}
+  animator: {fileID: 417617122}
 --- !u!4 &417617119
 Transform:
   m_ObjectHideFlags: 0
@@ -844,6 +845,28 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &417617122
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417617117}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e20cf1dff5d5fa4dba7866ff8c0297a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &435164233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,6 +1354,7 @@ GameObject:
   - component: {fileID: 723228722}
   - component: {fileID: 723228724}
   - component: {fileID: 723228725}
+  - component: {fileID: 723228726}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Untagged
@@ -1357,14 +1381,14 @@ MonoBehaviour:
   Xpos: 0
   active: 0
   endTurn: 0
-  damage: 0
+  damage: 1
   magic: 0
   abilityNum: 0
   placeSprite: {fileID: 35802581}
   hpBar: {fileID: 723228724}
   cam: {fileID: 0}
   gDataMb: {fileID: 0}
-  animator: {fileID: 0}
+  animator: {fileID: 723228726}
 --- !u!4 &723228723
 Transform:
   m_ObjectHideFlags: 0
@@ -1419,6 +1443,28 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &723228726
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723228721}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6637e962e85bc664680dc6b52a175183, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &725031590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,7 +2031,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9039285013537206206, guid: 89f9520877dd49140aa475537cbeaa1f, type: 3}
+  m_Sprite: {fileID: -1596999484918499234, guid: 376935c4f89422547823a86928668c2d, type: 3}
   m_Color: {r: 0.9811321, g: 0.8469206, b: 0.8469206, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -2143,6 +2189,7 @@ GameObject:
   - component: {fileID: 897491817}
   - component: {fileID: 897491819}
   - component: {fileID: 897491820}
+  - component: {fileID: 897491821}
   m_Layer: 0
   m_Name: Enemy3
   m_TagString: Untagged
@@ -2169,14 +2216,14 @@ MonoBehaviour:
   Xpos: 0
   active: 0
   endTurn: 0
-  damage: 0
+  damage: 3
   magic: 0
   abilityNum: 0
   placeSprite: {fileID: 777441776}
   hpBar: {fileID: 897491819}
   cam: {fileID: 0}
   gDataMb: {fileID: 0}
-  animator: {fileID: 0}
+  animator: {fileID: 897491821}
 --- !u!4 &897491818
 Transform:
   m_ObjectHideFlags: 0
@@ -2231,6 +2278,28 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &897491821
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897491816}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2af30c119800ed0428ceaf09afd8d10a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &902632259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 486264520201511366, guid: 82f2ab968eb1d394a85c7d712cd10dfb, type: 3}
@@ -3034,7 +3103,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4177297117688230344, guid: 89f9520877dd49140aa475537cbeaa1f, type: 3}
+  m_Sprite: {fileID: -5355334954806013609, guid: 42a884a2548d00142a75880219a3dd21, type: 3}
   m_Color: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -3124,7 +3193,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5637484617374436149, guid: 89f9520877dd49140aa475537cbeaa1f, type: 3}
+  m_Sprite: {fileID: -8578028819533232836, guid: d45ca864267d45f4a9d75546100dd05a, type: 3}
   m_Color: {r: 0.83916134, g: 0.990566, b: 0.82702917, a: 1}
   m_FlipX: 1
   m_FlipY: 0
