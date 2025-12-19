@@ -17,8 +17,12 @@ public class GameData
 [System.Serializable]
 public class PlayerData
 {
+    //данные игрока
     public string playername;
-
+    public int gold;
+    public int gems;
+    public int memories;
+    //данные отряда
     public string warName;
     public string runeName;
     public string rogName;
@@ -28,15 +32,34 @@ public class PlayerData
     public int warDamage;
     public int runeDamage;
     public int rogDamage;
-
+    //данные противников
+    public int lvlOfThreat;
+    //данные лагеря
+    public string blasmName;
+    public string kitchenName;
+    public string weapName;
+    public string runename;
+    public string blasmBaseText;
     public int lvlBlaSm;
     public int lvlKitchen;
     public int lvlWeapMaster;
     public int lvlRuneMaster;
 
+    public int upCostBmGold;
+    public int upCostBmGems;
+    public int upCostKitGold;
+    public int upCostKitGems;
+    public int upCostWeapGold;
+    public int upCostWeapGems;
+    public int upCostRuneGold;
+    public int upCostRuneGems;
+
+
+
     // Пустой конструктор (не обязателен, но на всякий случай)
     public PlayerData() { }
 }
+
 
 // ======================= СИСТЕМА СОХРАНЕНИЙ =======================
 public static class SaveSystem
@@ -77,6 +100,9 @@ public static class SaveSystem
         GameData newData = new GameData();
         newData.playerDatas = new PlayerData();
         newData.playerDatas.playername = saveName;
+        newData.playerDatas.gold = 0;
+        newData.playerDatas.gems = 0;
+        newData.playerDatas.memories = 0;
         newData.playerDatas.warName = warNames[randomIndex1];
         newData.playerDatas.runeName = runeNames[randomIndex2];
         newData.playerDatas.rogName = rogNames[randomIndex3];
@@ -86,12 +112,25 @@ public static class SaveSystem
         newData.playerDatas.warDamage = 5;
         newData.playerDatas.runeDamage = 4;
         newData.playerDatas.rogDamage = 6;
+
+        newData.playerDatas.blasmName = "Blacksmith";
+        newData.playerDatas.kitchenName = "Kithen";
+        newData.playerDatas.weapName = "Weapon Master";
+        newData.playerDatas.runename = "Rune priest";
+        newData.playerDatas.blasmBaseText = "Nice to see ya in my forge, lads!";
         newData.playerDatas.lvlBlaSm = 1;
         newData.playerDatas.lvlKitchen = 1;
         newData.playerDatas.lvlWeapMaster = 1;
         newData.playerDatas.lvlRuneMaster = 1;
 
-        newData.playerDatas.lvlBlaSm = 1;
+        newData.playerDatas.upCostBmGold = 30;
+        newData.playerDatas.upCostBmGems = 10;
+        newData.playerDatas.upCostKitGold = 20;
+        newData.playerDatas.upCostKitGems = 5;
+        newData.playerDatas.upCostRuneGold = 50; 
+        newData.playerDatas.upCostRuneGems = 40;
+        newData.playerDatas.upCostWeapGold = 40;
+        newData.playerDatas.upCostWeapGems = 30;
         // При желании можно сразу добавить первого игрока:
         // newData.playerDatas = new PlayerData[1] { new PlayerData { playername = saveName } };  // Исправил: используй массив, а не Add()
 

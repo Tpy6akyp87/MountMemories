@@ -157,7 +157,7 @@ public class MainMenu : MonoBehaviour
         gDataMb.loadingGame = selectedProfileName;
 
         // Переходим на игровую сцену
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Battle"); // ← замени на свою
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Camp"); // ← замени на свою
     }
 
     // ================================================
