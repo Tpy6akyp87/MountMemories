@@ -58,6 +58,31 @@ public class Building : MonoBehaviour
                     upgradeText.text = "If you want upgrade " + CurrentGameData.playerDatas.blasmName + " collect for me " + CurrentGameData.playerDatas.upCostBmGems.ToString() + " Gems and " + CurrentGameData.playerDatas.upCostBmGold.ToString() + " gold!";
                 }
                 break;
+            case "Kitchen":
+                {
+                    buildName.text = CurrentGameData.playerDatas.kitchenName;
+                    buildLvl.text = CurrentGameData.playerDatas.lvlKitchen.ToString();
+                    npsBaseText.text = CurrentGameData.playerDatas.kitchenBaseText;
+                    upgradeText.text = "If you want upgrade " + CurrentGameData.playerDatas.kitchenName + " collect for me " + CurrentGameData.playerDatas.upCostKitGems.ToString() + " Gems and " + CurrentGameData.playerDatas.upCostKitGold.ToString() + " gold!";
+                }
+                break;
+            case "Weaponmaster":
+                {
+                    buildName.text = CurrentGameData.playerDatas.weapName;
+                    buildLvl.text = CurrentGameData.playerDatas.lvlWeapMaster.ToString();
+                    npsBaseText.text = CurrentGameData.playerDatas.weapBaseText;
+                    upgradeText.text = "If you want upgrade " + CurrentGameData.playerDatas.weapName + " collect for me " + CurrentGameData.playerDatas.upCostWeapGems.ToString() + " Gems and " + CurrentGameData.playerDatas.upCostWeapGold.ToString() + " gold!";
+                }
+                break;
+            case "Runemaster":
+                {
+                    buildName.text = CurrentGameData.playerDatas.runemasterName;
+                    buildLvl.text = CurrentGameData.playerDatas.lvlRuneMaster.ToString();
+                    npsBaseText.text = CurrentGameData.playerDatas.runeBaseText;
+                    upgradeText.text = "If you want upgrade " + CurrentGameData.playerDatas.runemasterName + " collect for me " + CurrentGameData.playerDatas.upCostRuneGems.ToString() + " Gems and " + CurrentGameData.playerDatas.upCostRuneGold.ToString() + " gold!";
+                }
+                break;
+
         }
     }
 }

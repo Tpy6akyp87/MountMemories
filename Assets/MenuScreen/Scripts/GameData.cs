@@ -38,8 +38,11 @@ public class PlayerData
     public string blasmName;
     public string kitchenName;
     public string weapName;
-    public string runename;
+    public string runemasterName;
     public string blasmBaseText;
+    public string kitchenBaseText;
+    public string weapBaseText;
+    public string runeBaseText;
     public int lvlBlaSm;
     public int lvlKitchen;
     public int lvlWeapMaster;
@@ -114,10 +117,13 @@ public static class SaveSystem
         newData.playerDatas.rogDamage = 6;
 
         newData.playerDatas.blasmName = "Blacksmith";
-        newData.playerDatas.kitchenName = "Kithen";
+        newData.playerDatas.kitchenName = "Kitchen";
         newData.playerDatas.weapName = "Weapon Master";
-        newData.playerDatas.runename = "Rune priest";
+        newData.playerDatas.runemasterName = "Rune priest";
         newData.playerDatas.blasmBaseText = "Nice to see ya in my forge, lads!";
+        newData.playerDatas.kitchenBaseText = "Wash your hands before touching anything!";
+        newData.playerDatas.weapBaseText = "Let me see your axe...";
+        newData.playerDatas.runeBaseText = "I'll show you power of the Words";
         newData.playerDatas.lvlBlaSm = 1;
         newData.playerDatas.lvlKitchen = 1;
         newData.playerDatas.lvlWeapMaster = 1;
