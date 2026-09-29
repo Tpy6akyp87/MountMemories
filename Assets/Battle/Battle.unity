@@ -1026,7 +1026,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -198, y: -171}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 45.714287, y: 45.714287}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &468146011
 MonoBehaviour:
@@ -1068,7 +1068,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 468146012}
+  m_TargetGraphic: {fileID: 1827457276}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -2842,7 +2842,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: '
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2971,6 +2973,7 @@ MonoBehaviour:
   ndAbilName: 
   stAbil: {fileID: 468146011}
   ndAbil: {fileID: 1827457275}
+  stAbilImage: {fileID: -122419799738452789, guid: c5d102b9f02c97e45a7aedf73c3e7b56, type: 3}
 --- !u!4 &1788142251
 Transform:
   m_ObjectHideFlags: 0

@@ -9,8 +9,10 @@ public class Fighter : Unit
 {
     public string stAbilName;
     public string ndAbilName;
-    public Button stAbil;
+    public Button stAbil;    
     public Button ndAbil;
+    [SerializeField]
+    public Sprite stAbilImage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -69,6 +71,7 @@ public class Fighter : Unit
     {
         TMP_Text button1Text = stAbil.GetComponentInChildren<TMP_Text>();
         button1Text.text = stAbilName;
+        stAbil.image.sprite = stAbilImage;
         TMP_Text button2Text = ndAbil.GetComponentInChildren<TMP_Text>();
         button2Text.text = ndAbilName;
     }
