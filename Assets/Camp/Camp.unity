@@ -1352,7 +1352,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474299334}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e175d29ef47d4614ea79f97b0601fbaa, type: 3}
   m_Name: 
@@ -1362,13 +1362,7 @@ MonoBehaviour:
   buildLvl: {fileID: 830024085}
   buildName: {fileID: 2144994226}
   exploreButton: {fileID: 1426668932}
-  panel: {fileID: 1021322939}
-  panelImage: {fileID: 1529069880}
-  gradeImage: {fileID: 1483355560}
-  closeButton: {fileID: 1382877658}
-  npsBaseText: {fileID: 1763823795}
-  upgradeText: {fileID: 151455820}
-  upgradeButton: {fileID: 1867296717}
+  globalPanelManager: {fileID: 474299338}
   gDataMb: {fileID: 0}
 --- !u!114 &518596681 stripped
 MonoBehaviour:
@@ -1834,13 +1828,7 @@ MonoBehaviour:
   buildLvl: {fileID: 975974841}
   buildName: {fileID: 1097618495}
   exploreButton: {fileID: 1993670220}
-  panel: {fileID: 1021322939}
-  panelImage: {fileID: 1529069880}
-  gradeImage: {fileID: 1483355560}
-  closeButton: {fileID: 1382877658}
-  npsBaseText: {fileID: 1763823795}
-  upgradeText: {fileID: 151455820}
-  upgradeButton: {fileID: 1867296717}
+  globalPanelManager: {fileID: 783430827}
   gDataMb: {fileID: 0}
 --- !u!114 &783430828
 MonoBehaviour:
@@ -2267,13 +2255,7 @@ MonoBehaviour:
   buildLvl: {fileID: 830024085}
   buildName: {fileID: 2144994226}
   exploreButton: {fileID: 1426668932}
-  panel: {fileID: 1021322939}
-  panelImage: {fileID: 1529069880}
-  gradeImage: {fileID: 1483355560}
-  closeButton: {fileID: 1382877658}
-  npsBaseText: {fileID: 1763823795}
-  upgradeText: {fileID: 151455820}
-  upgradeButton: {fileID: 1867296717}
+  globalPanelManager: {fileID: 870312349}
   gDataMb: {fileID: 0}
 --- !u!1 &881109823
 GameObject:
@@ -2769,6 +2751,7 @@ GameObject:
   - component: {fileID: 1021322940}
   - component: {fileID: 1021322942}
   - component: {fileID: 1021322941}
+  - component: {fileID: 1021322943}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -2839,6 +2822,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021322939}
   m_CullTransparentMesh: 1
+--- !u!114 &1021322943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021322939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852877878555a4243b4011c936c7a9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuildingTrigger
+  gDataMb: {fileID: 0}
+  buildName: 
+  panelImage: {fileID: 1529069880}
+  gradeImage: {fileID: 1483355560}
+  closeButton: {fileID: 1382877658}
+  npsBaseText: {fileID: 1763823795}
+  upgradeText: {fileID: 151455820}
+  upgradeButton: {fileID: 1867296717}
 --- !u!1 &1097618493
 GameObject:
   m_ObjectHideFlags: 0
@@ -3068,13 +3071,7 @@ MonoBehaviour:
   buildLvl: {fileID: 1454185968}
   buildName: {fileID: 1848777205}
   exploreButton: {fileID: 1711231418}
-  panel: {fileID: 1021322939}
-  panelImage: {fileID: 1529069880}
-  gradeImage: {fileID: 1483355560}
-  closeButton: {fileID: 1382877658}
-  npsBaseText: {fileID: 1763823795}
-  upgradeText: {fileID: 151455820}
-  upgradeButton: {fileID: 1867296717}
+  globalPanelManager: {fileID: 1250418207}
   gDataMb: {fileID: 0}
 --- !u!114 &1250418208
 MonoBehaviour:
@@ -3185,13 +3182,7 @@ MonoBehaviour:
   buildLvl: {fileID: 625114482}
   buildName: {fileID: 1801845700}
   exploreButton: {fileID: 2049538797}
-  panel: {fileID: 1021322939}
-  panelImage: {fileID: 1529069880}
-  gradeImage: {fileID: 1483355560}
-  closeButton: {fileID: 1382877658}
-  npsBaseText: {fileID: 1763823795}
-  upgradeText: {fileID: 151455820}
-  upgradeButton: {fileID: 1867296717}
+  globalPanelManager: {fileID: 1260929628}
   gDataMb: {fileID: 0}
 --- !u!114 &1260929629
 MonoBehaviour:
@@ -3419,9 +3410,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 474299338}
-        m_TargetAssemblyTypeName: Building, Assembly-CSharp
-        m_MethodName: Explore
+      - m_Target: {fileID: 1021322943}
+        m_TargetAssemblyTypeName: BuildingTrigger, Assembly-CSharp
+        m_MethodName: ClosePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3481,6 +3472,7 @@ GameObject:
   - component: {fileID: 1426668934}
   - component: {fileID: 1426668933}
   - component: {fileID: 1426668932}
+  - component: {fileID: 1426668935}
   m_Layer: 5
   m_Name: Explore Button
   m_TagString: Untagged
@@ -3552,16 +3544,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 474299338}
-        m_TargetAssemblyTypeName: Building, Assembly-CSharp
-        m_MethodName: Explore
-        m_Mode: 1
+      - m_Target: {fileID: 1021322943}
+        m_TargetAssemblyTypeName: BuildingTrigger, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Blacksmith
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1426668933
@@ -3602,6 +3594,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426668930}
   m_CullTransparentMesh: 1
+--- !u!114 &1426668935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426668930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852877878555a4243b4011c936c7a9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuildingTrigger
+  gDataMb: {fileID: 0}
+  buildName: 
+  panelImage: {fileID: 0}
+  gradeImage: {fileID: 0}
+  closeButton: {fileID: 0}
+  npsBaseText: {fileID: 0}
+  upgradeText: {fileID: 0}
+  upgradeButton: {fileID: 0}
 --- !u!1 &1433020313
 GameObject:
   m_ObjectHideFlags: 0
@@ -4193,16 +4205,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 474299338}
-        m_TargetAssemblyTypeName: Building, Assembly-CSharp
-        m_MethodName: Explore
-        m_Mode: 1
+      - m_Target: {fileID: 1021322943}
+        m_TargetAssemblyTypeName: BuildingTrigger, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Kitchen
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1711231419
@@ -5005,7 +5017,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1867296718}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1021322943}
+        m_TargetAssemblyTypeName: BuildingTrigger, Assembly-CSharp
+        m_MethodName: UpgradeButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1867296718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5127,16 +5151,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 474299338}
-        m_TargetAssemblyTypeName: Building, Assembly-CSharp
-        m_MethodName: Explore
-        m_Mode: 1
+      - m_Target: {fileID: 1021322943}
+        m_TargetAssemblyTypeName: BuildingTrigger, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Runemaster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1993670221
@@ -5381,16 +5405,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 474299338}
-        m_TargetAssemblyTypeName: Building, Assembly-CSharp
-        m_MethodName: Explore
-        m_Mode: 1
+      - m_Target: {fileID: 1021322943}
+        m_TargetAssemblyTypeName: BuildingTrigger, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Weaponmaster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2049538798

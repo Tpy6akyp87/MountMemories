@@ -32,6 +32,9 @@ public class PlayerData
     public int warDamage;
     public int runeDamage;
     public int rogDamage;
+    public int warSpeed;
+    public int runeSpeed;
+    public int rogSpeed;
     //данные противников
     public int lvlOfThreat;
     //данные лагеря
@@ -103,8 +106,8 @@ public static class SaveSystem
         GameData newData = new GameData();
         newData.playerDatas = new PlayerData();
         newData.playerDatas.playername = saveName;
-        newData.playerDatas.gold = 0;
-        newData.playerDatas.gems = 0;
+        newData.playerDatas.gold = 10000;
+        newData.playerDatas.gems = 10000;
         newData.playerDatas.memories = 0;
         newData.playerDatas.warName = warNames[randomIndex1];
         newData.playerDatas.runeName = runeNames[randomIndex2];
@@ -112,6 +115,9 @@ public static class SaveSystem
         newData.playerDatas.warHP = 25;
         newData.playerDatas.runeHP = 23;
         newData.playerDatas.rogHP = 20;
+        newData.playerDatas.warSpeed = 5;
+        newData.playerDatas.rogSpeed = 6;
+        newData.playerDatas.runeSpeed = 4;
         newData.playerDatas.warDamage = 5;
         newData.playerDatas.runeDamage = 4;
         newData.playerDatas.rogDamage = 6;
