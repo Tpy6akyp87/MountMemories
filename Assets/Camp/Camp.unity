@@ -2836,6 +2836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BuildingTrigger
   gDataMb: {fileID: 0}
   buildName: 
+  nextscene: Mount
   panelImage: {fileID: 1529069880}
   gradeImage: {fileID: 1483355560}
   closeButton: {fileID: 1382877658}
@@ -3608,6 +3609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BuildingTrigger
   gDataMb: {fileID: 0}
   buildName: 
+  nextscene: 
   panelImage: {fileID: 0}
   gradeImage: {fileID: 0}
   closeButton: {fileID: 0}
@@ -5283,7 +5285,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2018902594}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1021322943}
+        m_TargetAssemblyTypeName: BuildingTrigger, Assembly-CSharp
+        m_MethodName: NextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2018902594
 MonoBehaviour:
   m_ObjectHideFlags: 0

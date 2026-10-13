@@ -23,6 +23,11 @@ public class Building : MonoBehaviour
 
     void Start()
     {
+        Refresh();
+    }
+
+    public void Refresh()
+    {
         LoadGameData();
         switch (BLDName)
         {
@@ -45,10 +50,7 @@ public class Building : MonoBehaviour
                 buildLvl.text = CurrentGameData.playerDatas.lvlRuneMaster.ToString();
                 break;
         }
-
     }
-
-    
 
     public void LoadGameData()
     {

@@ -10,6 +10,7 @@ public class BuildingTrigger : MonoBehaviour
     public GDataMb gDataMb;
 
     public string buildName;
+    public string nextscene;
     //public GameObject infoPanel;
     public Image panelImage;
     public Image gradeImage;
@@ -64,6 +65,15 @@ public class BuildingTrigger : MonoBehaviour
     public void ClosePanel()
     {
         gameObject.SetActive(false);
+        Building[] buildings = FindObjectsByType<Building>(FindObjectsSortMode.None);
+        foreach (Building building in buildings)
+        {
+            building.Refresh();
+        }
+    }
+    public void NextScene()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(nextscene);
     }
 
     public void UpgradeButton()
