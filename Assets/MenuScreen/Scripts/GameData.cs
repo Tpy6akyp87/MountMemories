@@ -50,7 +50,7 @@ public class PlayerData
     public int lvlKitchen;
     public int lvlWeapMaster;
     public int lvlRuneMaster;
-
+    //апгрейд лагеря
     public int upCostBmGold;
     public int upCostBmGems;
     public int upCostKitGold;
@@ -59,7 +59,16 @@ public class PlayerData
     public int upCostWeapGems;
     public int upCostRuneGold;
     public int upCostRuneGems;
-
+    //данные горы
+    public string region1name;
+    public string region2name;
+    public string region3name;
+    public string inst1regi1name;
+    public string inst1regi2name;
+    public string inst1regi3name;
+    public int threatRegi1;
+    public int threatRegi2;
+    public int threatRegi3;
 
 
     // Пустой конструктор (не обязателен, но на всякий случай)
@@ -109,6 +118,8 @@ public static class SaveSystem
         newData.playerDatas.gold = 10000;
         newData.playerDatas.gems = 10000;
         newData.playerDatas.memories = 0;
+
+
         newData.playerDatas.warName = warNames[randomIndex1];
         newData.playerDatas.runeName = runeNames[randomIndex2];
         newData.playerDatas.rogName = rogNames[randomIndex3];
@@ -121,6 +132,7 @@ public static class SaveSystem
         newData.playerDatas.warDamage = 5;
         newData.playerDatas.runeDamage = 4;
         newData.playerDatas.rogDamage = 6;
+
 
         newData.playerDatas.blasmName = "Blacksmith";
         newData.playerDatas.kitchenName = "Kitchen";
@@ -143,10 +155,25 @@ public static class SaveSystem
         newData.playerDatas.upCostRuneGems = 40;
         newData.playerDatas.upCostWeapGold = 40;
         newData.playerDatas.upCostWeapGems = 30;
-        // При желании можно сразу добавить первого игрока:
-        // newData.playerDatas = new PlayerData[1] { new PlayerData { playername = saveName } };  // Исправил: используй массив, а не Add()
 
-        Save(saveName, newData);
+        newData.playerDatas.region1name = "Deep dark hole";
+        newData.playerDatas.region2name = "Lost mines";
+        newData.playerDatas.region3name = "Hinterlands";
+        newData.playerDatas.inst1regi1name = "Dark Hole";
+        newData.playerDatas.inst1regi2name = "Gold mine";
+        newData.playerDatas.inst1regi3name = "Aerie peak";
+        newData.playerDatas.threatRegi1 = 1;
+        newData.playerDatas.threatRegi2 = 2;
+        newData.playerDatas.threatRegi3 = 3;
+
+
+
+
+
+    // При желании можно сразу добавить первого игрока:
+    // newData.playerDatas = new PlayerData[1] { new PlayerData { playername = saveName } };  // Исправил: используй массив, а не Add()
+
+    Save(saveName, newData);
         Debug.Log($"Создан новый профиль: {saveName}");
     }
 
