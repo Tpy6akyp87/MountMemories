@@ -12,7 +12,9 @@ public class HPbar : MonoBehaviour
 
     public void SetHP(float currentHP, float maxHP)
     {
-        targetFill = currentHP / maxHP;
+        if (maxHP > 0)
+            targetFill = currentHP / maxHP;
+        else targetFill = 0;
     }
 
     private void Update()
