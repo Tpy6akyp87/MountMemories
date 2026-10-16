@@ -40,7 +40,7 @@ public class DataKeeper : MonoBehaviour
         rogDmg.text = "Damage " + CurrentGameData.playerDatas.rogDamage.ToString();
 
 
-        lvlBlaSm.text = CurrentGameData.playerDatas.lvlBlaSm.ToString();
+        //lvlBlaSm.text = CurrentGameData.playerDatas.lvlBlaSm.ToString();
     }
 
     // Update is called once per frame

@@ -7,57 +7,65 @@ public class Building : MonoBehaviour
 {
     public string BLDName;
 
-    [Header ("Camp Ui")]
+    [Header("Camp Ui (Заполнять ТОЛЬКО на зданиях на сцене)")]
     public Image image;
     public TextMeshProUGUI buildLvl;
     public TextMeshProUGUI buildName;
     public Button exploreButton;
-    //public Button upgradeButton;
-    public GameObject panel;
 
-    [Header("Explore Ui")]
-    public Image panelImage;
-    public Image gradeImage;
-    public Button closeButton;
-    public TextMeshProUGUI npsBaseText;
-    public TextMeshProUGUI upgradeText;
-    public Button upgradeButton;
+    [Header("Ссылки на Общую Панель (Заполнять на зданиях на сцене)")]
+    [Tooltip("Перетащите сюда общую UI-панель из Canvas, на которой тоже висит этот скрипт")]
+    public Building globalPanelManager;
 
-    bool openPanel;
+    
     public static GameData CurrentGameData { get; private set; }
     public GDataMb gDataMb;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        LoadGameData();
-        panel.SetActive (false);
-        openPanel = false;
+        Refresh();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Refresh()
     {
-        
-    }
-    public void Explore()
-    {
-        if (!openPanel) { panel.SetActive(true); openPanel = true; }
-        else { panel.SetActive(false); openPanel = false; }
-    }
-    public void LoadGameData()
-    {
-        gDataMb = FindAnyObjectByType<GDataMb>();
-        CurrentGameData = SaveSystem.Load(gDataMb.loadingGame);
+        LoadGameData();
         switch (BLDName)
         {
             case "Blacksmith":
-                {
-                    buildName.text = CurrentGameData.playerDatas.blasmName;
-                    buildLvl.text = CurrentGameData.playerDatas.lvlBlaSm.ToString();
-                    npsBaseText.text = CurrentGameData.playerDatas.blasmBaseText;
-                    upgradeText.text = "If you want upgrade " + CurrentGameData.playerDatas.blasmName + " collect for me " + CurrentGameData.playerDatas.upCostBmGems.ToString() + " Gems and " + CurrentGameData.playerDatas.upCostBmGold.ToString() + " gold!";
-                }
+                buildName.text = BLDName;
+                buildLvl.text = CurrentGameData.playerDatas.lvlBlaSm.ToString();
                 break;
+            case "Kitchen":
+                buildName.text = BLDName;
+                buildLvl.text = CurrentGameData.playerDatas.lvlKitchen.ToString();
+                break;
+
+            case "Weaponmaster":
+                buildName.text = BLDName;
+                buildLvl.text = CurrentGameData.playerDatas.lvlWeapMaster.ToString();
+                break;
+
+            case "Runemaster":
+                buildName.text = BLDName;
+                buildLvl.text = CurrentGameData.playerDatas.lvlRuneMaster.ToString();
+                break;
+        }
+    }
+
+    public void LoadGameData()
+    {
+        if (gDataMb == null) gDataMb = FindAnyObjectByType<GDataMb>();
+        if (gDataMb != null)
+        {
+            CurrentGameData = SaveSystem.Load(gDataMb.loadingGame);
+        }
+    }
+    public void SaveGameData()
+    {
+        if (gDataMb == null) gDataMb = FindAnyObjectByType<GDataMb>();
+        if (gDataMb != null)
+        {
+            SaveSystem.Save(gDataMb.loadingGame, CurrentGameData);
         }
     }
 }

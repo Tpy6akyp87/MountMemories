@@ -721,6 +721,7 @@ MonoBehaviour:
   saveSlotPrefab: {fileID: 8085217103091953738, guid: 826b882ce9c514540a91d1d135b8ef65, type: 3}
   buttonPlay: {fileID: 1837148996}
   currentProfileText: {fileID: 577578519}
+  nextscene: Camp
   gDataMb: {fileID: 1748657560}
 --- !u!1 &577578518
 GameObject:
@@ -1197,7 +1198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -250.54503, y: 0.0002822876}
+  m_AnchoredPosition: {x: -250.54495, y: 0.0002822876}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &878180298
@@ -2495,7 +2496,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1986704083}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.9999949
+  m_Size: 0.9999955
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

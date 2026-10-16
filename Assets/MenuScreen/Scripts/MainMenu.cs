@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
     [Header("Другие настройки")]
     public Button buttonPlay;                       // Кнопка "Играть" (активируется после выбора профиля)
     public TextMeshProUGUI currentProfileText;      // Показывает текущий выбранный профиль
+    public string nextscene;
 
     // Внутренние данные
     private string selectedProfileName = null;      // Какой профиль сейчас выбран
@@ -157,7 +158,7 @@ public class MainMenu : MonoBehaviour
         gDataMb.loadingGame = selectedProfileName;
 
         // Переходим на игровую сцену
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Camp"); // ← замени на свою
+        UnityEngine.SceneManagement.SceneManager.LoadScene(nextscene); // ← замени на свою
     }
 
     // ================================================
