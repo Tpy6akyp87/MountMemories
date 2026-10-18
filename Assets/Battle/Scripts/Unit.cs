@@ -51,7 +51,12 @@ public class Unit : MonoBehaviour
         Ray ray = cam.ScreenPointToRay(mouseScreenPos);
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            Vector3 worldPos = hit.point; 
+            Vector3 worldPos = hit.point;
+            placeSprite.SetActive(true);
+        }
+        else
+        {
+            placeSprite.SetActive(false);
         }
     }
     public void Action()//времееная заглушка для передачи хода

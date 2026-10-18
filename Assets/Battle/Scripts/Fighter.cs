@@ -74,6 +74,7 @@ public class Fighter : Unit
         stAbil.image.sprite = stAbilImage;
         TMP_Text button2Text = ndAbil.GetComponentInChildren<TMP_Text>();
         button2Text.text = ndAbilName;
+        ndAbil.image.sprite = stAbilImage;
     }
 
     public void StSkill (Unit target)
