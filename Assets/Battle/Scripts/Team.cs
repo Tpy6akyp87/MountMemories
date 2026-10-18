@@ -4,15 +4,32 @@ using UnityEngine.InputSystem;
 public class Team : MonoBehaviour
 {
     public float teamSpeed;
-
     private Vector3 targetPosition;
     private bool isMoving = false;
+
+    public GameObject[] battleSlots = new GameObject[10];
+    public Fighter fighter;
+    public Rogue rogue;
+    public RuneKeeper runeKeeper;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        fighter.transform.position = battleSlots[4].transform.position;
+        rogue.transform.position = battleSlots[2].transform.position;
+        runeKeeper.transform.position = battleSlots[3].transform.position;
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("EnemyEvent"))
+        {
+            Instantiate(Resources.Load<GameObject>("Enemy1"), battleSlots[5].transform.position, Quaternion.identity, this.transform);
+            Instantiate(Resources.Load<GameObject>("Enemy2"), battleSlots[6].transform.position, Quaternion.identity, this.transform);
+            Instantiate(Resources.Load<GameObject>("Enemy3"), battleSlots[7].transform.position, Quaternion.identity, this.transform);
+            teamSpeed = 0;
+        }        
+    }
     // Update is called once per frame
     void Update()
     {

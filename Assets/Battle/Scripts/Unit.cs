@@ -44,21 +44,7 @@ public class Unit : MonoBehaviour
         hp = sethp;
         initiative = setInitiative;
     }
-    //public void ImATarget()
-    //{
-    //    if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
-    //    {
-    //        Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-    //        RaycastHit hit;
-
-    //        if (Physics.Raycast(ray, out hit))
-    //        {
-    //            GameObject clickedObject = hit.collider.gameObject;
-    //            Debug.Log("Кликнули по: " + clickedObject.name);
-    //            // Здесь у тебя ссылка: clickedObject
-    //        }
-    //    }
-    //}
+   
     public void CursorOnMe()
     {
         Vector2 mouseScreenPos = Mouse.current.position.ReadValue();
@@ -66,7 +52,6 @@ public class Unit : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
             Vector3 worldPos = hit.point; 
-            //Debug.Log("Курсор наведён на: " + worldPos);
         }
     }
     public void Action()//времееная заглушка для передачи хода
@@ -87,6 +72,10 @@ public class Unit : MonoBehaviour
     {
         Debug.Log(Name + " died");
     }
+    public void GetNewPosition(int newPosition)
+    {
+        Debug.Log(Name + " moved on position " + newPosition);
+    }
     public void SetAbility(int number)
     {
         abilityNum = number;
@@ -97,7 +86,7 @@ public class Unit : MonoBehaviour
         active = false;
         placeSprite.SetActive(false);
     }
-    public void FindTarget(int position)//, Unit target1, Unit target2, Unit target3) // pos = 1/2/3/23/123
+    public void FindTarget(int position)
     {
         Debug.Log("_______________________________________");
         Unit[] units;
@@ -118,6 +107,5 @@ public class Unit : MonoBehaviour
                 units[tg1].TakeDamage(damage);
                 break;
         }
-        //if (pos == 1) return;
     }
 }
