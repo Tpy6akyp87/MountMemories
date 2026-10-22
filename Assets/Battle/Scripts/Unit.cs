@@ -9,6 +9,8 @@ public class Unit : MonoBehaviour
     public int initiative;
     public float Xpos;
     public bool active;
+    public bool moved;
+    public bool skillDone;
     public bool endTurn;
     public int damage;
     public int magic;

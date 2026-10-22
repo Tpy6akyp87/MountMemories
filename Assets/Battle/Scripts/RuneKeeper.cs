@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using static UnityEngine.GraphicsBuffer;
 using TMPro;
 
-public class RuneKeeper : Unit
+public class RuneKeeper : TeamUnit
 {
     public string stAbilName;
     public string ndAbilName;

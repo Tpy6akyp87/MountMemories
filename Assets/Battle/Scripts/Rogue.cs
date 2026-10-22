@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using static UnityEngine.GraphicsBuffer;
 using TMPro;
 
-public class Rogue : Unit
+public class Rogue : TeamUnit
 {
     public string stAbilName;
     public string ndAbilName;

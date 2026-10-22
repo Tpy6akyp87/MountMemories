@@ -5,14 +5,16 @@ using UnityEngine.UI;
 using static UnityEngine.GraphicsBuffer;
 using TMPro;
 
-public class Fighter : Unit
+public class Fighter : TeamUnit
 {
     public string stAbilName;
     public string ndAbilName;
     public Button stAbil;    
     public Button ndAbil;
     [SerializeField]
-    public Sprite stAbilImage;
+    public Sprite firstAbilImage;
+    public Sprite secondAbilImage;
+    public Sprite thirdAbilImage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -27,6 +29,7 @@ public class Fighter : Unit
         placeSprite.SetActive(false);
         endTurn = false;
         abilityNum = 0;
+        //abilPanel = FindAnyObjectByType<AbilPanel>();
     }
 
     // Update is called once per frame
@@ -37,7 +40,8 @@ public class Fighter : Unit
         if (active)
         {
             animator.SetBool("WarIdle", true);
-            SetAbiliesOnButton();
+            //SetAbiliesOnButton();
+            abilPanel.GetActiveTeamUnit(firstAbilImage, secondAbilImage, thirdAbilImage);
             placeSprite.SetActive(true);
             if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
             {
@@ -71,10 +75,10 @@ public class Fighter : Unit
     {
         TMP_Text button1Text = stAbil.GetComponentInChildren<TMP_Text>();
         button1Text.text = stAbilName;
-        stAbil.image.sprite = stAbilImage;
+        stAbil.image.sprite = firstAbilImage;
         TMP_Text button2Text = ndAbil.GetComponentInChildren<TMP_Text>();
         button2Text.text = ndAbilName;
-        ndAbil.image.sprite = stAbilImage;
+        ndAbil.image.sprite = secondAbilImage;
     }
 
     public void StSkill (Unit target)
