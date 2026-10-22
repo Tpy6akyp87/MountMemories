@@ -7,10 +7,13 @@ public class Team : MonoBehaviour
     private Vector3 targetPosition;
     private bool isMoving = false;
 
+    public TurnController turnController;
+
     public GameObject[] battleSlots = new GameObject[10];
     public Fighter fighter;
     public Rogue rogue;
     public RuneKeeper runeKeeper;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,7 +31,8 @@ public class Team : MonoBehaviour
             Instantiate(Resources.Load<GameObject>("Enemy2"), battleSlots[6].transform.position, Quaternion.identity, this.transform);
             Instantiate(Resources.Load<GameObject>("Enemy3"), battleSlots[7].transform.position, Quaternion.identity, this.transform);
             teamSpeed = 0;
-        }        
+        }
+        turnController.InitiateQuerry();
     }
     // Update is called once per frame
     void Update()

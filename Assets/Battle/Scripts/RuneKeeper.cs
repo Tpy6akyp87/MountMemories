@@ -30,7 +30,7 @@ public class RuneKeeper : TeamUnit
         hpBar.SetHP(hp, maxhp);
         if (active)
         {
-            SetAbiliesOnButton();
+            //SetAbiliesOnButton();
             placeSprite.SetActive(true);
             if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
             {
@@ -54,7 +54,31 @@ public class RuneKeeper : TeamUnit
 
             //Action();
         }
+        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            Action();
+        }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public void SetAbiliesOnButton()
     {
         TMP_Text button1Text = stAbil.GetComponentInChildren<TMP_Text>();

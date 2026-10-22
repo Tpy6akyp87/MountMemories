@@ -66,9 +66,35 @@ public class Unit : MonoBehaviour
         Debug.Log(Name + "    походил");
         EndTurn();
     }
+    public void EndTurn()
+    {
+        endTurn = true;
+        active = false;
+        placeSprite.SetActive(false);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public void TakeDamage(int damage)
     {
-        Debug.Log(Name + " получил " + damage + " урона");
+        //Debug.Log(Name + " получил " + damage + " урона");
         if ((hp - damage) > 0)
         {
             hp -= damage;
@@ -77,23 +103,18 @@ public class Unit : MonoBehaviour
     }
     public void Die()
     {
-        Debug.Log(Name + " died");
+        //Debug.Log(Name + " died");
     }
-    public void GetNewPosition(int newPosition)
+    public void GetNewPosition(int newPosition)  // НЕ ИСПОЛЬЗУЕТСЯ ПОКА
     {
         Debug.Log(Name + " moved on position " + newPosition);
     }
-    public void SetAbility(int number)
+    public void SetAbility(int number) // НЕ ИСПОЛЬЗУЕТСЯ ПОКА
     {
         abilityNum = number;
     }
-    public void EndTurn()
-    {
-        endTurn = true;
-        active = false;
-        placeSprite.SetActive(false);
-    }
-    public void FindTarget(int position)
+    
+    public void FindTarget(int position) // НЕ ИСПОЛЬЗУЕТСЯ ПОКА
     {
         Debug.Log("_______________________________________");
         Unit[] units;
@@ -106,7 +127,7 @@ public class Unit : MonoBehaviour
             if (units[i].transform.position.x == -1) { tg1 = i; Debug.Log(units[i].name); }
             if (units[i].transform.position.x == -3) { tg2 = i; Debug.Log(units[i].name); }
             if (units[i].transform.position.x == -5) { tg3 = i; Debug.Log(units[i].name); }
-            Debug.Log("Позиция " + units[i].Name + " = " + units[i].transform.position.x);
+            //Debug.Log("Позиция " + units[i].Name + " = " + units[i].transform.position.x);
         }
         switch (position)
         {

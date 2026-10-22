@@ -9,7 +9,7 @@ public class TurnController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        units = FindObjectsByType<Unit>(FindObjectsSortMode.None);
+       
     }
     void Update()
     {
@@ -31,14 +31,21 @@ public class TurnController : MonoBehaviour
                 if (i == 5)
                 {
                     units[0].active = true;
+                    Debug.Log(units[0].Name + " начал ход");
                 }
                 else
                 {
                     units[i+1].active = true;
+                    Debug.Log(units[i+1].Name + " начал ход");
                 }                    
             }
         }
     }
+    public void InitiateQuerry()
+    {
+        units = FindObjectsByType<Unit>(FindObjectsSortMode.None);
+    }
+
 
     // Update is called once per frame
     

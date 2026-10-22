@@ -20,10 +20,10 @@ public class Fighter : TeamUnit
 
     void Start()
     {
-        LoadStats();
+        //LoadStats();
         stAbilName = "Swing";
         ndAbilName = "Throw";
-        GetStats(CurrentGameData.playerDatas.warName,22,12, 6);
+        GetStats("Dolboeb",22,12, 6);
         hpBar.SetHP(hp, maxhp);
         active = false;
         placeSprite.SetActive(false);
@@ -70,8 +70,40 @@ public class Fighter : TeamUnit
             animator.SetBool("WarIdle", true);
             animator.SetBool("WarAttack", false);
         }
+        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            Action();
+        }
     }
-    public void SetAbiliesOnButton()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public void SetAbiliesOnButton() // Õ≈ »—œŒÀ‹«”≈“—ﬂ œŒ ¿
     {
         TMP_Text button1Text = stAbil.GetComponentInChildren<TMP_Text>();
         button1Text.text = stAbilName;

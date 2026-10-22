@@ -2364,6 +2364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Team
   teamSpeed: 5
+  turnController: {fileID: 849452582}
   battleSlots:
   - {fileID: 1054247775}
   - {fileID: 1867543638}
