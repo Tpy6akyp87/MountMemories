@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Mount/Mount.unity
     guid: 3a9d647663aca484c9a72a71ca1e5952
+  - enabled: 1
+    path: Assets/Explore/Explore.unity
+    guid: 6ebc94f7d66f41541a612d624466db41
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
